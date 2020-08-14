@@ -39,5 +39,6 @@ to test the forward model alone.
 
 Notes:  
 You can also run the above steps with a fixed test case by
-```test_run_data_and_ip.sh
+```
+test_run_data_and_ip.sh
 ```
