@@ -1,0 +1,12 @@
+build/*.o
+bin/*
+
+outputData/*
+outputData/*
+postprocessing/*.dat
+postprocessing/*.m
+postprocessing/qoi-stats*
+inputs/datafile.txt
+inputs/datafile-reduced.txt
+inputs/info.txt
+inputs/matrix.txt
