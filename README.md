@@ -40,17 +40,3 @@ to test the forward model alone.
 Notes:  
 You can also run the above steps with a fixed test case by
 ```test_run_data_and_ip.sh'''
-
-MUST UPDATE: 
-To cite this code, you can use: 
-```
-@misc{morrison2020glvcode,  
-  doi = {10.5281/ZENODO.3666845},  
-  url = {https://zenodo.org/record/3666845},  
-  author = {Morrison, Rebecca E.},  
-  title = {rebeccaem/zika: Initial release},  
-  publisher = {Zenodo},  
-  version = {0.1.0},   
-  year = {2020}  
- }
- ```
