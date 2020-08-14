@@ -8,11 +8,20 @@ My Makefile is included for reference. A bin and build file should be created lo
 
 The steps to run the code are as follows:
 ```
+python3 inputs/interaction-matrix.py
+./bin/gen_data
 rm -r outputData
-./bin/zika_ip inputs/mhInput.inp
+./bin/glv_plus inputs/mhInput.inp
 ```
-Remove or move existing 'outputData' directory. This directory is created during the inverse problem. 
-'mhInput.inp' is an input file for QUESO.
+The first creates the interaction matrix $A$, the random vector $b$, and outputs the files info.txt and matrix.txt.
+
+The second generates data based on the information given above.
+
+The third removes existing 'outputData' directory (of course, alternatively you
+can just rename this to save results). This directory is created during the
+inverse problem.  'mhInput.inp' is an input file for QUESO.
+
+The fourth runs the inverse problem according to the queso inputs in the mhInput.inp.
 
 To plot the time series results:
 ```
@@ -27,26 +36,15 @@ You can also run
 ./bin/gen_data
 ```
 to test the forward model alone.
-The standard part of the code---the inverse problem---can be run with the following commands:
-
-1) python inputs/interaction-matrix.py
-2) ./bin/gen_data
-3) ./bin/glv_plus inputs/mhInput.inp
-
-The first creates the interaction matrix $A$, the random vector $b$, and outputs the files info.txt and matrix.txt.
-
-The second generates data based on the information given above.
-
-The third runs the inverse problem according to the queso inputs in the mhInput.inp.
-
 
 Notes:  
 You can also run the above steps with a fixed test case by
 ```test_run_data_and_ip.sh'''
 
-<!--- To cite this code, you can use: 
+MUST UPDATE: 
+To cite this code, you can use: 
 ```
-@misc{morrison2020zikacode,  
+@misc{morrison2020glvcode,  
   doi = {10.5281/ZENODO.3666845},  
   url = {https://zenodo.org/record/3666845},  
   author = {Morrison, Rebecca E.},  
@@ -56,4 +54,3 @@ You can also run the above steps with a fixed test case by
   year = {2020}  
  }
  ```
----!>
